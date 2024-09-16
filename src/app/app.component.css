@@ -1,0 +1,36 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(201, 146, 179);
+
+}
+.main nav{
+    background-color: rgb(137, 56, 83);
+    display: flex;
+    padding: 10px;
+}
+.main nav a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.main nav a:hover{
+    background-color: rgb(190, 60, 114);
+    font-size: x-large;
+}
+.main nav .divider{
+    flex: 1 1 auto;
+}
+.content{
+    padding: 10px;
+    flex: 1;
+    animation-name: example;
+    animation-duration: 2s;  
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+@keyframes example {
+    from {top: 0px; background-color: rgb(85, 73, 78);}
+    to {top: 200px; background-color: rgb(52, 52, 52);}
+}
